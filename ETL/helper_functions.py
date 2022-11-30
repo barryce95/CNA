@@ -8,6 +8,8 @@ import openpyxl
 from azure.storage.blob import BlobServiceClient
 import time
 
+exec(open("config.py").read())
+
 def download_csv_from_cloud_storage(LOCALFILENAME, BLOBNAME, HEADER):
     """
     Function to load csv file from Azure Blob Storage into Pandas Dataframe.

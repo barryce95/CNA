@@ -1,7 +1,20 @@
+#Inputs
+census = "CensusFlatFile2022.csv"
+census_dd = "FFIEC_Census_File_Definitions_26AUG22.xlsx"
+lar = "2021_public_lar_pa.csv"
+
+#Outputs
+outfile = 'census_lar_merge.csv'
+
+#Values for Use
+state_fips_code=42
+
+#Key Files / Storage Accounts
 STORAGEACCOUNTURL= "https://bdousncvbaddmv01sta.blob.core.windows.net"
 STORAGEACCOUNTKEY= "JhbiDWfvxlthZngR4WkZDaaxhE/QMWj8bIXvdNH8MTvHYxNoSRq88UifxDawqeMlVpYuR3vpokQi52Ek1Ccqsw=="
 CONTAINERNAME= "newcontainer"
 
+#Dictionary and Column Definition
 cols_census = [
         'census_tract_merge', 
         'MSA/MD median family income', 
